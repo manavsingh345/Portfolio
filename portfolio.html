@@ -237,23 +237,24 @@
                 <h1 class="contactus-heading">Contact me</h1>
                 <h3 class="contactus-subHeading">Questions, thoughts, or just want to say hello?</h3>
                 <div class="contactus-form-container">
-                    <form class="form" action="">
+                    <!-- Replace your current form with this -->
+                    <form class="form" id="contactForm">
                         <div class="formfield-container">
-                            <input class="formfield" type="text" name="name" id="" placeholder="Enter your name">
-                            <input class="formfield" type="text" name="email" id=""
-                                placeholder="Enter your email address">
-                            <input class="formfield" type="text" name="subject" id="" placeholder="Enter your subject">
-
-                            <textarea name="message" id="" cols="30" rows="10" class="formfield formfield-textarea"
-                                placeholder="Enter your message"></textarea>
-
+                            <input class="formfield" type="text" name="name" id="name" placeholder="Enter your name"
+                                required>
+                            <input class="formfield" type="email" name="email" id="email"
+                                placeholder="Enter your email address" required>
+                            <input class="formfield" type="text" name="subject" id="subject"
+                                placeholder="Enter your subject" required>
+                            <textarea name="message" id="message" cols="30" rows="10"
+                                class="formfield formfield-textarea" placeholder="Enter your message"
+                                required></textarea>
                         </div>
-
                         <div>
                             <button type="submit" class="btn-pink" id="submit-btn">Send Message <i
                                     class="submit-icon fa-solid fa-paper-plane"></i></button>
                         </div>
-
+                    </form>
                     </form>
                 </div>
 
@@ -271,15 +272,15 @@
                     <div class="link-wrapper">
                         <div>
                             <a href="#projects">Projects</a>
-                            
+
                         </div>
                         <div>
                             <a href="#skills">Skills</a>
-                            
+
                         </div>
                         <div>
                             <a href="#contactme">Conatct Me</a>
-                            
+
                         </div>
                     </div>
                     <div class="icon-wrapper">
@@ -293,6 +294,9 @@
         </footer>
 
     </div>
+
+    <script src="portfolio.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="http://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
 
@@ -311,6 +315,8 @@
             backDelay: 1000,
         });
     </script>
+
 </body>
+<!-- Add this script at the bottom of your body -->
 
 </html>
